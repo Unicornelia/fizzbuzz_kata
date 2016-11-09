@@ -14,3 +14,11 @@ end
 def is_devisible_by?(number, divisor)
   number % divisor == 0
 end
+
+def fizzbuzz(number)
+  return 0 if number == 0
+  return 'fizzbuzz' if is_devisible_by_15?(number)
+  return 'fizz' if is_devisible_by_3?(number)
+  return 'buzz' if is_devisible_by_5?(number)
+  number
+end
